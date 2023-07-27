@@ -9,13 +9,15 @@ public class AppClasses {
         System.out.println("Renda: " + cliente.getRenda());
         System.out.println("Sexo: " + cliente.getSexo());
         System.out.println("Ano de Nascimento: " + cliente.getAnoNascimento());
+        System.out.println("Especial: " + cliente.isEspecial());                   //é como se fosse uma pergunta: "É especial?"
         System.out.println();                             //colocado só para pular linha na hora de compilar
-        Cliente cliente2 = new Cliente();
-        cliente2.setRenda(2000);
-        cliente2.setSexo('S');
-        cliente2.setAnoNascimento(1970);
+       
+        Cliente cliente2 = new Cliente(2000, 'F');
+        System.out.println();
+
         System.out.println("Renda: " + cliente2.getRenda());
         System.out.println("Sexo: " + cliente2.getSexo());
         System.out.println("Ano de Nascimento: " + cliente2.getAnoNascimento());
+        System.out.println("Especial: " + cliente2.isEspecial());                   //é como se fosse uma pergunta: "É especial?"
     }
 }
