@@ -1,6 +1,9 @@
 package com.example;
 
 public class Cliente {                     //Colocar o public para a classe poder ser vista dentro de qualquer pacote
+    private String cpf;
+    private String Cidade;
+    private String nome;                    //Todo atributo privado precisa de um Set e de um Get
     private double renda;                 //O private e public são Modificadores de Visibilidade //isso é um Atributo. Não é uma Variável qualquer. Está fora do método "main"
     private char sexo;
     private boolean especial;               //para definir se o cliente é especial ou não
@@ -22,6 +25,32 @@ public class Cliente {                     //Colocar o public para a classe pode
         this.renda = renda;
         this.sexo = sexo;
     }     
+
+    public String getCidade() {
+        return Cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.Cidade = cidade;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        if (nome.isBlank())                                   //isBlank verifica se o espaço está vazio ou em branco. Tem quei tirar os nomes da outra aba para ver o efeito
+            System.out.println("Nome é obrigatório");
+        else this.nome = nome.toUpperCase().trim();               //toUpperCase é para colocar o nome todo em MAIÚSCULO     //trim é para retirar os espaços a mais que um usuário possa digitar
+    }
 
     public boolean isEspecial() {
         return especial;
@@ -50,7 +79,7 @@ public class Cliente {                     //Colocar o public para a classe pode
     public double getRenda(){              //isso é uma função. tem que pegar a varável determinada. no caso renda é double. o Get pega a renda
         return renda;               //retornar um valor para quem chamar o Método
     }
-   public void setRenda(double renda){         //passa o valor. renda dentro do parenteses é um Parâmetro. o Set altera a renda. Voide é vazio
+    public void setRenda(double renda){         //passa o valor. renda dentro do parenteses é um Parâmetro. o Set altera a renda. Voide é vazio
         if(renda >= 0)                        //verificando SE tem números negativos ou NÂO
           this.renda = renda;              // para diferenciar, coloca o this no objeto atual. O outro "renda" é o parâmetro
         else System.out.println("A renda deve ser maior ou igual a zero");
