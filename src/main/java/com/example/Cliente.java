@@ -86,4 +86,7 @@ public class Cliente {                     //Colocar o public para a classe pode
           this.renda = renda;              // para diferenciar, coloca o this no objeto atual. O outro "renda" é o parâmetro
         else System.out.println("A renda deve ser maior ou igual a zero");
     }
+    public String toString(){                                   //método para usar a Lista na outra aba
+        return " Cliente: " + nome + " Cidade: " + Cidade;
+    }
 }
