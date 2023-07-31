@@ -1,6 +1,7 @@
 package com.example;
 
 public class Cliente {                     //Colocar o public para a classe poder ser vista dentro de qualquer pacote
+
     private String cpf;
     private String Cidade;
     private String nome;                    //Todo atributo privado precisa de um Set e de um Get
@@ -10,7 +11,8 @@ public class Cliente {                     //Colocar o public para a classe pode
 
 
     public Cliente(){                                  //se não retornasse nada era public void    //Construtor do "new Cliente" na outra aba   //este exemplo está no clinte na outra aba
-        System.out.println("Criando um cliente usando o construtor sem parâmetro");
+      
+    System.out.println("Criando um cliente usando o construtor sem parâmetro");
         double aleatorio = Math.random();                                            //Gera um número aleatório entre 0 e 1
         if(aleatorio > 0.5)                                                         //50% de ser especial ou não
             especial = true;

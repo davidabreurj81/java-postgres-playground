@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AppScanner {
     public static void main(String[] args) {
+        
         Cliente cliente = new Cliente();                   //new está referenciando a Classe Cliente              //Cliente é um tipo, é um objeto
         Scanner scanner = new Scanner(System.in);                //Tipo e variável //Scanner está em outro pacote diferente do src/main/java/com/example, com isso temos que importar lá em cima
                                                                  //instanciar tem que ser "new e o nome da classe" 

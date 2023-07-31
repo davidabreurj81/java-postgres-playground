@@ -2,6 +2,7 @@ package com.example;
 
 public class AppOperadoresRelacionais {
     public static void main(String[] args) {
+        
         var cliente1 = new Cliente();                       //uma forma de instanciar a classe Cliente.     //var substitui o Tipo (Variável) que seria "Cliente". "cliente1" é o nome da variável, ou seja, cliente1 é da CLASSE Cliente
         cliente1.setAnoNascimento(1980);
 

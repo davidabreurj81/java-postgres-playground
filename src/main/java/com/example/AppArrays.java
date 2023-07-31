@@ -1,7 +1,10 @@
 package com.example;
+
 import java.util.Arrays;
+
 public class AppArrays {
     public static void main(String[] args) {                             //ao digitar só "main" ele completa pra vc
+
        int vetor3[] = new int [5];
         for (int i = 0; i < vetor3.length; i++){                    //enquanto o i for menor que o tamanho do Vetor, que é o "length" ele vai incrementar o i
             vetor3 [i] = 100 * (i+1);                               //100 * i seria 100*0, então tem que somar com +1. E colocar entre parenteses para somar primeiro antes de multiplicar

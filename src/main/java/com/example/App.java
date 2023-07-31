@@ -1,6 +1,8 @@
 package com.example;
+
 public class App {
     public static void main(String[] args) {                                   // o main é uma função     -     as chaves delimitam uma função em java
+
         System.out.println();
         System.out.println();
         System.out.println("Minha aplicação Java\n");

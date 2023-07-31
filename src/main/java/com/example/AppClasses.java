@@ -1,6 +1,8 @@
 package com.example;
+
 public class AppClasses {
     public static void main(String[] args) {
+
         Cliente cliente = new Cliente();                   //new está referenciando a Classe CLiente              //Cliente é um tipo, é um objeto
         cliente.setRenda(-10000);                //os parenteses não pode ficar vazio pq tem parâmetro dentro dele lá em cima. Diferente do get
         cliente.setSexo('M');                              // Obrigatório usar o set, pois a classe está privada
@@ -10,8 +12,6 @@ public class AppClasses {
         cliente.setCidade("Palmas");
 
         System.out.println("1º caracter do nome: " + cliente.getNome().charAt(0)); //charAt pega a letra do nome que vc especificar na posição entre parenteses
-
-       
         System.out.println("Cidade: " + cliente.getCidade());
         System.out.println("CPF: " + cliente.getCpf());
         System.out.println("Nome: " + cliente.getNome());
